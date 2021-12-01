@@ -1,5 +1,4 @@
 ### WAMP (APACHE + Mysql + PHP) 사용
-<br>
 
 - 목표 : parsing하고 데이터베이스에 insert한 데이터들을 이용하여 web 상에 출력하면서 의미 있는 data들을 뽑아내는 것
 > (Patientinfo, Case, Region, Weather, Time_info 5개의 테이블 이용)
