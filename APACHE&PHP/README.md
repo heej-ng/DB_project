@@ -13,19 +13,19 @@
 
 ## php file description
 #### case2.php
-CASEINFO 테이블의 attribute 중 province를 기준으로 filtering 하였다.
-filtering 방법은 text 타입으로 province를 입력한 뒤 입력 text에 해당하는 province를 가진 row들을 출력하는 것이다.
+> CASEINFO 테이블의 attribute 중 province를 기준으로 filtering 하였다.<br>
+> filtering 방법은 text 타입으로 province를 입력한 뒤 입력 text에 해당하는 province를 가진 row들을 출력하는 것이다.
 
 #### time2.php
-TIMEINFO 테이블의 attribute 중 Date를 기준으로 filtering 하였다.
-filtering 방법은 date 타입(달력 날짜 선택)으로 원하는 날짜를 고른 뒤 해당 date의 row를 출력하는 것이다.
+> TIMEINFO 테이블의 attribute 중 Date를 기준으로 filtering 하였다.<br>
+> filtering 방법은 date 타입(달력 날짜 선택)으로 원하는 날짜를 고른 뒤 해당 date의 row를 출력하는 것이다.
 
 #### patient2.php
-PATIENTINFO 테이블의 attribute 중 Sex를 기준으로 filtering 하였다.
-filtering 방법은 select 타입으로 all, male, female, none(=null) 중 하나를 선택하면 해당 성별의 row들을 출력하는 것이다.
+> PATIENTINFO 테이블의 attribute 중 Sex를 기준으로 filtering 하였다.<br>
+> filtering 방법은 select 타입으로 all, male, female, none(=null) 중 하나를 선택하면 해당 성별의 row들을 출력하는 것이다.
 
 #### view_province.php
 `CREATE view PROVINCE_COUNT AS select province, count(*) as patient_count from PatientInfo group by province order by count(*) DESC;`
 
-PATIENTINFO 테이블의 attribute 중 province를 기준으로 group by를 하였고 province, count(*)를 select 하여 count(*) 내림차순으로 PROVINCE_COUNT 라는 VIEW 테이블을 생성했다.
-province 별 환자수를 내림차순으로 출력.
+> PATIENTINFO 테이블의 attribute 중 province를 기준으로 group by를 하였고 province, count(*)를 select 하여 count(*) 내림차순으로 PROVINCE_COUNT 라는 VIEW 테이블을 생성했다.
+> province 별 환자수를 내림차순으로 출력.
