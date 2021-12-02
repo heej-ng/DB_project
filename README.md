@@ -70,6 +70,17 @@ cf) this column refers to the 'patient_id' column.
 - Released : 확진받고 격리된 사람들중 격리해제된 사람들수(누적)
 - Deceased : 누적 사망자수
 - 주의) 모든 column은 "누적"됨
+<br>
+
+### 특이사항
+> df = df.fillna('NULL')를 통해 NaN 값을 NULL로 문자열화 한다. <br>
+> 이후 각 행에서 추출한 데이터들을 formatting 할 때, date나 varchar 처럼 숫자 타입이 아닌 데이터들의 경우 '"{}"'.format(데이터)으로 formatting 하여 "데이터"와 같이 ""를 붙인 문자열 형태로 sql문에 넣었다.
+
+> 다만, '"{}"' 으로 formatting 할 경우, NULL 값이 "NULL"처럼 ""가 추가된 문자열 형태로 들어가는 경우가 생겼다. <br>
+> 이를 해결하기 위해 replace('\"NULL\"', "NULL")를 사용하여 "NULL"에서 ""를 지우는 방식을 사용하였다.
+
+> Parsing_timegender.py 에서 male, female 값이 적혀있지않은 NULL 값들도 따로 저장하였다.
+<br>
 
 -------------------------
 #### :computer: [APACHE&PHP repo link](https://github.com/heej-ng/DB_project/tree/main/APACHE%26PHP)
