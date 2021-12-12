@@ -66,3 +66,17 @@ cf) this column refers to the 'patient_id' column.
 > 이를 해결하기 위해 replace('\"NULL\"', "NULL")를 사용하여 "NULL"에서 ""를 지우는 방식을 사용하였다.
 
 > Parsing_timegender.py 에서 male, female 값이 적혀있지않은 NULL 값들도 따로 저장하였다.
+<br>
+
+----------------------------------
+
+##### Hospital table update 21.12.12
+
+### Hospital 테이블
+- Hospital_id (primary key)
+- Province
+- City
+- Latitude : 위도
+- Longitude : 경도
+- Capacity : 최대 수용인원
+- Current : 현재 수용인원
