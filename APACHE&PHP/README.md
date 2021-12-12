@@ -29,3 +29,13 @@
 
 > PATIENTINFO 테이블의 attribute 중 province를 기준으로 group by를 하였고 province, count(*)를 select 하여 count(*) 내림차순으로 PROVINCE_COUNT 라는 VIEW 테이블을 생성했다.
 > province 별 환자수를 내림차순으로 출력.
+<br>
+
+--------------------------------
+##### patient3.php index.php update 21.12.12
+##### Google Cloud Platform의 Maps Javascript API 사용
+
+## php file description
+#### patient3.php
+> Hospital_id 입력시 해당 hospital에 배정되어 있는 patient 목록 출력
+> Hospital_id 값 클릭시 구글맵 api를 사용한 index.php로 이동하여 위도, 경도를 통하여 해당 hospital 위치를 지도로 출력
