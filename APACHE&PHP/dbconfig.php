@@ -19,9 +19,9 @@
     mysqli_query($link, "set names utf8");
 
 //    $dPconfig['dbhost'] = 'cobi.knu.ac.kr';
-//    $dPconfig['dbname'] = 'stid_2020110007';
-//    $dPconfig['dbuser'] = '2020110007';
-//    $dPconfig['dbpass'] = 'Gmlwnd_11';
+//    $dPconfig['dbname'] = '';
+//    $dPconfig['dbuser'] = '';
+//    $dPconfig['dbpass'] = '';
 
 //    $db_host    = $dPconfig['dbhost'];
 //    $db_user    = $dPconfig['dbuser'];
