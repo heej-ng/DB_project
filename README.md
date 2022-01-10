@@ -82,6 +82,20 @@ cf) this column refers to the 'patient_id' column.
 > Parsing_timegender.py 에서 male, female 값이 적혀있지않은 NULL 값들도 따로 저장하였다.
 <br>
 
+----------------------------------
+
+##### Hospital table update 21.12.12
+
+### Hospital 테이블
+- Hospital_id (primary key)
+- Province
+- City
+- Latitude : 위도
+- Longitude : 경도
+- Capacity : 최대 수용인원
+- Current : 현재 수용인원
+
+
 -------------------------
 #### :computer: [APACHE&PHP repo link](https://github.com/heej-ng/DB_project/tree/main/APACHE%26PHP)
 
